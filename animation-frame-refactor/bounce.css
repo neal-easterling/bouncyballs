@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruslan+Display&display=swap');
+:root{
+    --clr-dark: #333;
+    --clr-sub-dark: #555;
+    --clr-light: #ddd;
+    --clr-mid: #999;
+    --clr-accent: #27a3e0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-mid);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--clr-dark);
+    background-color: var(--clr-mid);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    min-height: 600px;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+
+}
+footer{
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   padding: 2rem; 
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--clr-mid);
+    color: var(--clr-dark);
+    border: 2px solid var(--clr-light);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: var(--clr-light);
+    border-color: var(--clr-mid);
+}
+#bounce-container{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px solid var(--clr-sub-dark);
+    border-radius: 5px;
+    /* border-top: none; */
+    h2{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        color: var(--clr-sub-dark);
+        z-index: 0;
+    }
+    .ball{
+        position:absolute;
+        z-index: 1;
+    }
+}
