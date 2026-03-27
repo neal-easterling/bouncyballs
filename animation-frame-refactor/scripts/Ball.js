@@ -4,7 +4,7 @@ export class Ball{
     constructor(){
         this.id = String(Math.floor(Math.random() * 1000));
         this.x = Math.floor(Math.random() * (450 - 50) + 50);
-        this.y = -20;
+        this.y = 15;
         this.yDir = 1;
         this.xDir = this.getRandomDir();
         this.velocity = Math.random();
